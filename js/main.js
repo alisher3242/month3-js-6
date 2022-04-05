@@ -14,14 +14,18 @@ let operator = prompt("Amalni kiritng:");
 let num2 = prompt("Ikkinchi sonni kiriting:");
 num2 = Number(num2)
 
-if (operator == "+" ) {
+if ( isNaN(num1) || isNaN(num2) ) {
+    console.log("Raqam kiritng!!!");
+}
+
+if (operator == "+" || ( isNaN(num1) && isNaN(num2) ) ) {
     console.log("Natijangiz: " + (num1+num2) );
-}else if (operator == "-") {
+}else if (operator == "-" || ( isNaN(num1) && isNaN(num2) )) {
     console.log("Natijangiz: " + (num1-num2));
-}else if(operator == "*") {
+}else if(operator == "*" || ( isNaN(num1) && isNaN(num2) )) {
     console.log("Natijangiz: " + (num1*num2));
-}else if(operator == "/") {
+}else if(operator == "/" || ( isNaN(num1) && isNaN(num2) )) {
     console.log("Natijangiz: " + (num1/num2));
 }else {
-    console.log("Tog'ri amal kiriting: ");
+    console.log("Tog'ri amal kiriting!!!");
 }
