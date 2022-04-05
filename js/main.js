@@ -16,16 +16,16 @@ num2 = Number(num2)
 
 if ( isNaN(num1) || isNaN(num2) ) {
     console.log("Raqam kiritng!!!");
-}
-
-if (operator == "+" || ( isNaN(num1) && isNaN(num2) ) ) {
-    console.log("Natijangiz: " + (num1+num2) );
-}else if (operator == "-" || ( isNaN(num1) && isNaN(num2) )) {
-    console.log("Natijangiz: " + (num1-num2));
-}else if(operator == "*" || ( isNaN(num1) && isNaN(num2) )) {
-    console.log("Natijangiz: " + (num1*num2));
-}else if(operator == "/" || ( isNaN(num1) && isNaN(num2) )) {
-    console.log("Natijangiz: " + (num1/num2));
-}else {
-    console.log("Tog'ri amal kiriting!!!");
+}else{
+    if (operator == "+") {
+        console.log("Natijangiz: " + (num1+num2) );
+    }else if (operator == "-") {
+        console.log("Natijangiz: " + (num1-num2));
+    }else if(operator == "*") {
+        console.log("Natijangiz: " + (num1*num2));
+    }else if(operator == "/") {
+        console.log("Natijangiz: " + (num1/num2));
+    }else {
+        console.log("Tog'ri amal kiriting!!!");
+    }
 }
